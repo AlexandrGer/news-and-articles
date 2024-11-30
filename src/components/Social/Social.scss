@@ -10,3 +10,9 @@
     height: 20px;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .social__links {
+    gap: 10px;
+  }
+}

@@ -26,7 +26,6 @@
     align-items: center;
     justify-content: center;
     gap: 30px;
-    font-family: "Roboto";
     font-weight: bold;
     font-size: 15px;
   }
@@ -62,12 +61,53 @@
     display: flex;
     text-decoration: none;
     color: #fff;
-    font-family: "Roboto";
-    font-weight: normal;
     font-size: 14px;
 
     &:hover {
       text-decoration: underline;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header-top {
+    &__wrapper {
+      gap: 20px;
+    }
+  }
+
+  .navigation-links {
+    & ul {
+      gap: 10px;
+      font-size: 12px;
+    }
+  }
+
+  .user-menu {
+    & ul {
+      gap: 10px;
+    }
+
+    & li:last-child {
+      box-sizing: border-box;
+      width: 24px;
+      height: 24px;
+      padding: 4px;
+    }
+  }
+}
+
+@media screen and (max-width: 424px) {
+  .header-top {
+    &__wrapper {
+      gap: 10px;
+    }
+  }
+
+  .navigation-links {
+    & ul {
+      flex-wrap: wrap;
+      width: 100px;
     }
   }
 }

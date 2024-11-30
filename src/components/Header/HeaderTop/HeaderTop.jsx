@@ -1,8 +1,28 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Social from "../../Social/Social";
 import "./HeaderTop.scss";
 
 export default function HeaderTop() {
+  const [windowWidth, setWindowWidth] = useState(() => {
+    if (typeof window !== "undefined") {
+      return window.innerWidth;
+    }
+    return 1200;
+  });
+
+  useEffect(() => {
+    function handleWindowResizeTimeout() {
+      setTimeout(() => {
+        setWindowWidth(window.innerWidth);
+      }, 500);
+    }
+
+    window.addEventListener("resize", handleWindowResizeTimeout);
+    return () => {
+      window.removeEventListener("resize", handleWindowResizeTimeout);
+    };
+  }, []);
+
   return (
     <div className="header-top">
       <div className="container">
@@ -43,7 +63,17 @@ export default function HeaderTop() {
                   </a>
                 </li>
                 <li>
-                  <a href="/#">Личный кабинет</a>
+                  {windowWidth > 767 ? (
+                    <a href="/#">Личный кабинет</a>
+                  ) : (
+                    <a href="/#">
+                      <img
+                        src="./images/profile-icon.svg"
+                        alt="Личный кабинет"
+                        className="icon"
+                      />
+                    </a>
+                  )}
                 </li>
               </ul>
             </nav>
