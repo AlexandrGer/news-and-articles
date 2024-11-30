@@ -1,0 +1,32 @@
+.footer-bottom {
+  background: #262626;
+
+  &__container {
+    min-height: 77px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__info {
+    & ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      font-size: 16px;
+      line-height: 25.6px;
+
+      & a {
+        text-decoration: none;
+        color: #ababab;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

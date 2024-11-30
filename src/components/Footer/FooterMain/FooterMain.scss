@@ -1,0 +1,103 @@
+.footer-main {
+  padding: 70px 0 95px;
+  background: #101010;
+  color: #fff;
+
+  &__container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  &__info {
+    width: 100%;
+    max-width: 271px;
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+
+    &-text {
+      margin: 0 0 13px;
+      line-height: 29px;
+    }
+
+    &-button {
+      margin: 0 0 33px;
+      width: 155px;
+      height: 46px;
+      background: url("../../../../public/images/download.png") center no-repeat;
+      cursor: pointer;
+
+      &:hover {
+        scale: 1.1;
+      }
+    }
+
+    &-copyright {
+      margin: 0;
+      line-height: 21.09px;
+    }
+  }
+}
+
+.logo_footer {
+  max-width: 216px;
+  height: 36.38px;
+  margin-bottom: 28px;
+}
+
+.footer-main__columns {
+  display: flex;
+  align-items: flex-start;
+  gap: 120px;
+}
+
+.footer-main__column {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.footer-main__column-heading {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 28.13px;
+  color: #6c6c6c;
+}
+
+.footer-main__column-links {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: Roboto;
+  font-size: 18px;
+  line-height: 23.4px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+
+  & a {
+    text-decoration: none;
+    color: #fff;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.footer-main__column-button {
+  padding: 13px 17px;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 3px;
+  border: 1px solid #fff;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 21.09px;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
