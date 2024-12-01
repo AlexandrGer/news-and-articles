@@ -1,7 +1,7 @@
 # Тестовое задание для компании Фарватер
 
 ## Задание
- Нужно по макету сделать верстку страницы,по [макету](https://www.figma.com/design/XU7bbOeldKwnTb6aIhVyyS/HTML-test-prj1)
+ Нужно по [макету](https://www.figma.com/design/XU7bbOeldKwnTb6aIhVyyS/HTML-test-prj1) сделать верстку страницы
  
 ### С требованиями:
 - Кроссбраузерность
