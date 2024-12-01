@@ -15,20 +15,20 @@ export default function HeaderTop() {
             <nav className="navigation-links">
               <ul>
                 <li>
-                  <a href="/#">Форум</a>
+                  <a href="#">Форум</a>
                 </li>
                 <li>
-                  <a href="/#">Поиск</a>
+                  <a href="#">Поиск</a>
                 </li>
                 <li>
-                  <a href="/#">Контакты</a>
+                  <a href="#">Контакты</a>
                 </li>
               </ul>
             </nav>
             <nav className="user-menu">
               <ul>
                 <li>
-                  <a href="/#">
+                  <a href="#">
                     <img
                       src="./images/star-icon.svg"
                       alt="Избранное"
@@ -37,7 +37,7 @@ export default function HeaderTop() {
                   </a>
                 </li>
                 <li>
-                  <a href="/#">
+                  <a href="#">
                     <img
                       src="./images/basket-icon.svg"
                       alt="Корзина"
@@ -47,9 +47,9 @@ export default function HeaderTop() {
                 </li>
                 <li>
                   {windowWidth >= 767 ? (
-                    <a href="/#">Личный кабинет</a>
+                    <a href="#">Личный кабинет</a>
                   ) : (
-                    <a href="/#">
+                    <a href="#">
                       <img
                         src="./images/profile-icon.svg"
                         alt="Личный кабинет"

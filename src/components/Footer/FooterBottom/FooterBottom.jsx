@@ -11,10 +11,10 @@ export default function FooterBottom() {
           <nav className="footer-bottom__info">
             <ul>
               <li>
-                <a href="/#">Политика конфиденциальности</a>
+                <a href="#">Политика конфиденциальности</a>
               </li>
               <li>
-                <a href="/#">Карта сайта</a>
+                <a href="#">Карта сайта</a>
               </li>
             </ul>
           </nav>

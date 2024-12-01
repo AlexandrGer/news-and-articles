@@ -13,22 +13,22 @@ export default function HeaderMenu() {
           {windowWidth >= 424 && (
             <ul className="menu">
               <li>
-                <a href="/#">ElcoreStore</a>
+                <a href="#">ElcoreStore</a>
               </li>
               <li>
-                <a href="/#">ElcoreCloud</a>
+                <a href="#">ElcoreCloud</a>
               </li>
               <li>
-                <a href="/#">ElcoreIDE</a>
+                <a href="#">ElcoreIDE</a>
               </li>
               {windowWidth >= 539 && (
                 <>
                   <li>
-                    <a href="/#">Обучение и ресурсы</a>
+                    <a href="#">Обучение и ресурсы</a>
                     <span></span>
                   </li>
                   <li>
-                    <a href="/#">Новости и статьи</a>
+                    <a href="#">Новости и статьи</a>
                   </li>
                 </>
               )}

@@ -10,22 +10,22 @@ export default function Social({ footer }) {
         }
       >
         <li>
-          <a href="/#">
+          <a href="#">
             <img src="./images/telegram.svg" alt="telegram" className="icon" />
           </a>
         </li>
         <li>
-          <a href="/#">
+          <a href="#">
             <img src="./images/dzen.svg" alt="dzen" className="icon" />
           </a>
         </li>
         <li>
-          <a href="/#">
+          <a href="#">
             <img src="./images/youtube.svg" alt="youtube" className="icon" />
           </a>
         </li>
         <li>
-          <a href="/#">
+          <a href="#">
             <img src="./images/vk.svg" alt="vk" className="icon" />
           </a>
         </li>

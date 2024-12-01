@@ -37,22 +37,22 @@ export default function CardList() {
               <button className="button-prev" disabled></button>
               <ul>
                 <li>
-                  <a href="/#">1</a>
+                  <a href="#">1</a>
                 </li>
                 <li>
-                  <a href="/#">2</a>
+                  <a href="#">2</a>
                 </li>
                 <li>
-                  <a href="/#">3</a>
+                  <a href="#">3</a>
                 </li>
                 <li>
-                  <a href="/#">4</a>
+                  <a href="#">4</a>
                 </li>
                 <li>
                   <span>...</span>
                 </li>
                 <li>
-                  <a href="/#">11</a>
+                  <a href="#">11</a>
                 </li>
               </ul>
               <button className="button-next"></button>

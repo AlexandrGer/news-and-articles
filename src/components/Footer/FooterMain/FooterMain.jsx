@@ -25,13 +25,13 @@ export default function FooterMain() {
               <h3 className="footer-main__column-heading">Платформа</h3>
               <ul className="footer-main__column-links">
                 <li>
-                  <a href="/#">ElcoreStore</a>
+                  <a href="#">ElcoreStore</a>
                 </li>
                 <li>
-                  <a href="/#">ElcoreCloud</a>
+                  <a href="#">ElcoreCloud</a>
                 </li>
                 <li>
-                  <a href="/#">ElcoreIDE</a>
+                  <a href="#">ElcoreIDE</a>
                 </li>
               </ul>
             </nav>
@@ -41,38 +41,38 @@ export default function FooterMain() {
               </h3>
               <ul className="footer-main__column-links">
                 <li>
-                  <a href="/#">Что такое ElcorePLC</a>
+                  <a href="#">Что такое ElcorePLC</a>
                 </li>
                 <li>
-                  <a href="/#">Документация</a>
+                  <a href="#">Документация</a>
                 </li>
                 <li>
-                  <a href="/#">Обучающие материалы</a>
+                  <a href="#">Обучающие материалы</a>
                 </li>
                 <li>
-                  <a href="/#">Примеры использования</a>
+                  <a href="#">Примеры использования</a>
                 </li>
                 <li>
-                  <a href="/#">База знаний</a>
+                  <a href="#">База знаний</a>
                 </li>
               </ul>
             </nav>
             <nav className="footer-main__column">
-              <a href="/#" className="footer-main__column-button">
+              <a href="#" className="footer-main__column-button">
                 Личный кабинет
               </a>
               <ul className="footer-main__column-links">
                 <li>
-                  <a href="/#">Контакты</a>
+                  <a href="#">Контакты</a>
                 </li>
                 <li>
-                  <a href="/#">Новости и статьи</a>
+                  <a href="#">Новости и статьи</a>
                 </li>
                 <li>
-                  <a href="/#">Сообщество (Форум)</a>
+                  <a href="#">Сообщество (Форум)</a>
                 </li>
                 <li>
-                  <a href="/#">Тех поддержка</a>
+                  <a href="#">Тех поддержка</a>
                 </li>
               </ul>
             </nav>

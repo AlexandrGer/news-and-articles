@@ -3,8 +3,8 @@ import "./Breadcrumbs.scss";
 
 export default function Breadcrumbs() {
   const items = [
-    { name: "Главная", link: "/#" },
-    { name: "Новости и статьи", link: "/#" },
+    { name: "Главная", link: "#" },
+    { name: "Новости и статьи", link: "#" },
   ];
   return (
     <div className="breadcrumbs">
