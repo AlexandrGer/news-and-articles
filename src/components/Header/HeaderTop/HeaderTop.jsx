@@ -1,27 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
+import useWindoWidth from "../../../utils/useWindowWidth";
 import Social from "../../Social/Social";
 import "./HeaderTop.scss";
 
 export default function HeaderTop() {
-  const [windowWidth, setWindowWidth] = useState(() => {
-    if (typeof window !== "undefined") {
-      return window.innerWidth;
-    }
-    return 1200;
-  });
-
-  useEffect(() => {
-    function handleWindowResizeTimeout() {
-      setTimeout(() => {
-        setWindowWidth(window.innerWidth);
-      }, 500);
-    }
-
-    window.addEventListener("resize", handleWindowResizeTimeout);
-    return () => {
-      window.removeEventListener("resize", handleWindowResizeTimeout);
-    };
-  }, []);
+  const windowWidth = useWindoWidth();
 
   return (
     <div className="header-top">
@@ -63,7 +46,7 @@ export default function HeaderTop() {
                   </a>
                 </li>
                 <li>
-                  {windowWidth > 767 ? (
+                  {windowWidth >= 767 ? (
                     <a href="/#">Личный кабинет</a>
                   ) : (
                     <a href="/#">

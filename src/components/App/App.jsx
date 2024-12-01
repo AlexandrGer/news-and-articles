@@ -10,7 +10,7 @@ export default function App() {
       <main className="main">
         <div className="container">
           <div className="page">
-            <h1 className="title">Новости и стать</h1>
+            <h1 className="title">Новости и статьи</h1>
             <CardList />
           </div>
         </div>
