@@ -118,6 +118,12 @@
 }
 
 @media screen and (max-width: 424px) {
+  .header-menu {
+    &__container {
+      min-height: 70px;
+    }
+  }
+
   .logo {
     max-width: 150px;
   }

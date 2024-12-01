@@ -1,8 +1,9 @@
 .main {
-  margin: 70px auto 80px;
+  margin: 0 auto;
 }
 
 .page {
+  margin: 70px auto 80px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -12,4 +13,11 @@
 .title {
   margin: 0;
   text-align: center;
+}
+
+@media screen and (max-width: 539px) {
+  .page {
+    margin: 32px auto 32px;
+    gap: 32px;
+  }
 }

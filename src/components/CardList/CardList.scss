@@ -12,6 +12,7 @@
   list-style: none;
   display: flex;
   align-items: center;
+  text-align: center;
   gap: 15px;
   font-size: 14px;
   line-height: 16.41px;
@@ -118,4 +119,32 @@
 .button-next {
   background: url("../../../public/images/arrow-next.svg") center no-repeat;
   rotate: 180deg;
+}
+
+@media screen and (max-width: 539px) {
+  .card-list {
+    &__container {
+      gap: 32px;
+    }
+  }
+
+  .card-list__wrapper {
+    gap: 32px;
+  }
+
+  .card-list__items {
+    row-gap: 32px;
+  }
+}
+
+@media screen and (max-width: 424px) {
+  .card-list__tag {
+    align-items: stretch;
+    font-size: 12px;
+
+    & li {
+      display: flex;
+      align-items: center;
+    }
+  }
 }
