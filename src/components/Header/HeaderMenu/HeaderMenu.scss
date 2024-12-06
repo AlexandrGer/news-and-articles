@@ -29,24 +29,46 @@
     align-items: center;
     gap: 8px;
 
-    & span {
+    & .arrow {
       display: block;
       width: 13px;
       height: 10px;
       background: url("../../../../public/images/arrow-bottom.svg") no-repeat
         center;
       cursor: pointer;
+
+      &_up {
+        rotate: 180deg;
+      }
     }
   }
 
-  & a {
+  & a,
+  p {
     text-decoration: none;
     color: #fff;
+    cursor: pointer;
+    margin: 0;
 
     &:hover {
       text-decoration: underline;
     }
   }
+}
+
+.menu__list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  position: absolute;
+  background: #101010;
+  border-radius: 3px;
+  padding: 5px 10px;
+  top: 30px;
+  left: -10px;
+  align-items: center;
+  text-align: center;
 }
 
 .burger-menu {
