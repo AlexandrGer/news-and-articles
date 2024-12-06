@@ -1,7 +1,7 @@
 export const dataList = [
   {
     id: 1,
-    type: "Новость",
+    type: "news",
     date: "12 июля 2024",
     image: null,
     title: "Новые технологии в сфере автоматизации",
@@ -10,7 +10,7 @@ export const dataList = [
   },
   {
     id: 2,
-    type: "Статья",
+    type: "articles",
     date: null,
     image: "./images/image.jpg",
     title: "Влияние цифровизации",
@@ -19,7 +19,7 @@ export const dataList = [
   },
   {
     id: 3,
-    type: "Новость",
+    type: "news",
     date: "24 апреля 2024",
     image: null,
     title: "Устойчивое развитие и ответственность",

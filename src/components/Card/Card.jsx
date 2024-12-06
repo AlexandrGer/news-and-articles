@@ -16,10 +16,10 @@ export default function Card({ card }) {
           <>
             <p>{card.date}</p>
             <span>/</span>
-            <p>{card.type}</p>
+            <p>Новость</p>
           </>
         ) : (
-          <p>{card.type}</p>
+          <p>Статья</p>
         )}
       </div>
       <h2 className="card__title">{card.title}</h2>

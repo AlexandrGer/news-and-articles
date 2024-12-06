@@ -1,9 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { dataList } from "../../utils/Data";
-import "./CardList.scss";
 import Card from "../Card/Card";
+import "./CardList.scss";
 
 export default function CardList() {
+  const [activeButton, setActiveButton] = useState("all");
+
+  const buttons = [
+    { id: "all", label: "Все новости и статьи" },
+    { id: "news", label: "Новости" },
+    { id: "articles", label: "Статьи" },
+  ];
+
   const newObjects = Array.from({ length: 6 }, (_, i) => {
     const original = dataList[i % dataList.length];
     return {
@@ -16,18 +24,41 @@ export default function CardList() {
     () => Math.random() - 0.5
   );
 
+  const filterDataList = () => {
+    if (activeButton === "all") {
+      return newDataList;
+    }
+    return newDataList.filter((item) => item.type === activeButton);
+  };
+
+  const filteredList = filterDataList();
+
+  function handleButtonClick(id) {
+    setActiveButton(id);
+  }
+
   return (
     <div className="card-list">
       <div className="container">
         <div className="card-list__container">
-          <ul className="card-list__tag">
-            <li>Все новости и статьи</li>
-            <li>Новости</li>
-            <li>Статьи</li>
+          <ul className="card-list__tags">
+            {buttons.map((button) => (
+              <li
+                className={
+                  activeButton === button.id
+                    ? "card-list__tag card-list__tag_active"
+                    : "card-list__tag"
+                }
+                key={button.id}
+                onClick={() => handleButtonClick(button.id)}
+              >
+                {button.label}
+              </li>
+            ))}
           </ul>
           <div className="card-list__wrapper">
             <ul className="card-list__items">
-              {newDataList.map((card) => (
+              {filteredList.map((card) => (
                 <li key={card.id}>
                   <Card card={card} />
                 </li>
