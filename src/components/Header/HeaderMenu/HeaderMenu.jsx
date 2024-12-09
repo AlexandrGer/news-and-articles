@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import useWindoWidth from "../../../utils/useWindowWidth";
 import "./HeaderMenu.scss";
+import BurgerMenu from "../../Burger/Burger";
 
 export default function HeaderMenu() {
   const windowWidth = useWindoWidth();
@@ -60,9 +61,7 @@ export default function HeaderMenu() {
               )}
             </ul>
           )}
-          <button className="burger-menu">
-            <span className="burger-menu__lines"></span>
-          </button>
+          <BurgerMenu />
         </nav>
       </div>
     </div>
