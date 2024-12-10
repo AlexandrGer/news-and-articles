@@ -12,7 +12,7 @@ export const dataList = [
     id: 2,
     type: "articles",
     date: null,
-    image: "./images/image.jpg",
+    image: "/images/image.jpg",
     title: "Влияние цифровизации",
     description:
       "Вызовы и возможности появляются для компаний в результате цифровой трансформации производства",
